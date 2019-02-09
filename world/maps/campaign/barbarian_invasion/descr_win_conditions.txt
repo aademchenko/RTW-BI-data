@@ -1,0 +1,71 @@
+saxons
+hold_regions Tribus_Saxones Britannia_Superior Belgica
+take_regions 18
+
+vandals
+hold_regions Baetica Africa Northern_Italy
+take_regions 10
+
+empire_east
+hold_regions Thracia Aegyptus Northern_Italy Africa
+take_regions 34
+
+empire_west
+hold_regions Northern_Italy Africa Taraconensis Thracia
+take_regions 34
+
+huns
+hold_regions Northern_Italy Thracia
+take_regions 15
+
+franks
+hold_regions Lugdinensis Aquitania Narbonensis
+take_regions 20
+
+alemanni
+hold_regions Germania_Superior Pannonia Northern_Italy
+take_regions 20
+
+sarmatians
+hold_regions Pannonia Illyricum_et_Dalmatia Colchis
+take_regions 15
+
+goths
+hold_regions Thracia Northern_Italy
+take_regions 16
+
+sassanids
+hold_regions Aegyptus Palaestina Thracia
+take_regions 20
+
+celts
+hold_regions Britannia_Superior Britannia_Inferior Lugdinensis 
+take_regions 16
+
+romano_british
+hold_regions Britannia_Superior Britannia_Inferior Lugdinensis 
+take_regions 14
+
+slavs
+hold_regions Thracia
+take_regions 14
+
+ostrogoths
+hold_regions Northern_Italy Illyricum_et_Dalmatia
+take_regions 14
+
+berbers
+hold_regions Africa Aegyptus
+take_regions 10
+
+lombardi
+hold_regions Aemilia_et_Liguria Venetia
+take_regions 14
+
+burgundii
+hold_regions Alpes_Maritimae_et_Cottinae Raetia Narbonensis
+take_regions 14
+
+roxolani
+hold_regions Pannonia Illyricum_et_Dalmatia Colchis
+take_regions 10

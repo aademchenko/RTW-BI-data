@@ -1,0 +1,71 @@
+
+; historical events and when they occur
+;
+; Events are followed by a category, and a label
+; labels are used as lookups into historic_events.txt for title and body strings,
+; and also as image names for the event picture
+; 
+; Currently supported categories are:
+; historic - Just generates a message
+; volcano  - triggers a volcano if there is one on the map at the position specified
+; plague   - triggers a plague in settlements at the specified positions
+; emergent_faction - triggers the emergence of the given faction.  This faction must be marked
+;	as emergent in descr_strat.txt
+;
+; event descriptions are followed by a date (year as offset from starting date, and season, summer/winter)
+; and either a list of positions, or list of regions.  Each position/region specification must appear on 
+; a seperate line below the date
+
+event	historic	new_testament_formulated
+date 4 summer
+
+event	historic	the_sassanid_martyrdom
+date 13 summer
+
+event	historic 	the_martyrdom_of_saint_eusebius
+date 16 summer
+
+event	historic	first_council_of_constantinople
+date 18 summer
+
+event	historic	the_serapeum_destroyed
+date 28 summer
+
+event	historic	final_olympic_games_held
+date 31 summer
+
+event	historic	council_of_carthage
+date 31 winter
+
+event	historic	the_notitia_dignitarum
+date 32 winter
+
+event	historic	the_vulgate
+date 42 summer
+
+event	historic	heretical_british_monk_disapppears
+date 52 summer
+
+event	historic	patrick_introduces_christianity_to_ireland
+date 55 summer
+
+event	emergent_faction	slavs
+date	47 summer
+region  Locus_Barbaricum
+
+event	historic		council_of_ephesus
+date 67 summer
+
+event	historic		legal_code_revised
+date 68 summer
+
+event	historic		council_of_chalcedon
+date 75 summer
+
+event	historic		papal_primacy
+date 88 summer
+
+event	historic		pagan_philosopher_murdered
+date 104
+
+

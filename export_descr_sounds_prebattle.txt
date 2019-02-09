@@ -1,0 +1,735 @@
+BANK: prebattle_speech
+	cultures roman
+		element ONE_LINER
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_One_Liner_001.mp3
+					Roman_One_Liner_002.mp3
+					Roman_One_Liner_003.mp3
+					Roman_One_Liner_004.mp3
+					Roman_One_Liner_005.mp3
+					Roman_One_Liner_006.mp3
+					Roman_One_Liner_007.mp3
+					Roman_One_Liner_008.mp3
+					Roman_One_Liner_009.mp3
+					Roman_One_Liner_010.mp3
+					Roman_One_Liner_011.mp3
+					Roman_One_Liner_012.mp3
+					Roman_One_Liner_013.mp3
+					Roman_One_Liner_014.mp3
+					Roman_One_Liner_015.mp3
+					Roman_One_Liner_016.mp3
+					Roman_One_Liner_017.mp3
+					Roman_One_Liner_018.mp3
+					Roman_One_Liner_019.mp3
+					Roman_One_Liner_020.mp3
+					Roman_One_Liner_021.mp3
+					Roman_One_Liner_022.mp3
+					Roman_One_Liner_023.mp3
+					Roman_One_Liner_024.mp3
+					Roman_One_Liner_025.mp3
+					Roman_One_Liner_026.mp3
+					Roman_One_Liner_027.mp3
+					Roman_One_Liner_028.mp3
+					Roman_One_Liner_029.mp3
+					Roman_One_Liner_030.mp3
+					Roman_One_Liner_031.mp3
+					Roman_One_Liner_032.mp3
+					Roman_One_Liner_033.mp3
+					Roman_One_Liner_034.mp3
+					Roman_One_Liner_035.mp3
+					Roman_One_Liner_036.mp3
+					Roman_One_Liner_037.mp3
+					Roman_One_Liner_038.mp3
+					Roman_One_Liner_039.mp3
+					Roman_One_Liner_040.mp3
+					Roman_One_Liner_041.mp3
+					Roman_One_Liner_042.mp3
+					Roman_One_Liner_043.mp3
+					Roman_One_Liner_044.mp3
+					Roman_One_Liner_045.mp3
+					Roman_One_Liner_046.mp3
+					Roman_One_Liner_047.mp3
+					Roman_One_Liner_048.mp3
+					Roman_One_Liner_049.mp3
+					Roman_One_Liner_050.mp3
+					Roman_One_Liner_051.mp3
+					Roman_One_Liner_052.mp3
+					Roman_One_Liner_053.mp3
+					Roman_One_Liner_054.mp3
+					Roman_One_Liner_055.mp3
+					Roman_One_Liner_056.mp3
+					Roman_One_Liner_057.mp3
+					Roman_One_Liner_058.mp3
+					Roman_One_Liner_059.mp3
+					Roman_One_Liner_060.mp3
+					Roman_One_Liner_061.mp3
+					Roman_One_Liner_062.mp3
+					Roman_One_Liner_063.mp3
+					Roman_One_Liner_064.mp3
+					Roman_One_Liner_065.mp3
+					Roman_One_Liner_066.mp3
+					Roman_One_Liner_067.mp3
+					Roman_One_Liner_068.mp3
+					Roman_One_Liner_069.mp3
+					Roman_One_Liner_070.mp3
+					Roman_One_Liner_071.mp3
+					Roman_One_Liner_072.mp3
+					Roman_One_Liner_073.mp3
+					Roman_One_Liner_074.mp3
+					Roman_One_Liner_075.mp3
+					Roman_One_Liner_076.mp3
+					Roman_One_Liner_077.mp3
+					Roman_One_Liner_078.mp3
+					Roman_One_Liner_079.mp3
+					Roman_One_Liner_080.mp3
+					Roman_One_Liner_081.mp3
+					Roman_One_Liner_082.mp3
+					Roman_One_Liner_083.mp3
+					Roman_One_Liner_084.mp3
+					Roman_One_Liner_085.mp3
+					Roman_One_Liner_086.mp3
+					Roman_One_Liner_087.mp3
+					Roman_One_Liner_088.mp3
+					Roman_One_Liner_089.mp3
+					Roman_One_Liner_090.mp3
+					Roman_One_Liner_091.mp3
+					Roman_One_Liner_092.mp3
+					Roman_One_Liner_093.mp3
+					Roman_One_Liner_094.mp3
+					Roman_One_Liner_095.mp3
+					Roman_One_Liner_096.mp3
+					Roman_One_Liner_097.mp3
+					Roman_One_Liner_098.mp3
+					Roman_One_Liner_099.mp3
+					Roman_One_Liner_100.mp3
+				end
+		element VNV_OPENING
+			VnV BadCommander 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_01_1.mp3
+				end
+			VnV BattleScarred 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_02_1.mp3
+				end
+			VnV BoringSpeaker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_03_1.mp3
+				end
+			VnV Brave 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_04_1.mp3
+				end
+			VnV Brave 4
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_04_4.mp3
+				end
+			VnV Coward 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_05_1.mp3
+				end
+			VnV Feck 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					; Roman_Intro_06_1.wav
+				end
+			VnV GloriousFool 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_07_1.mp3
+				end
+			VnV GoodCommander 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_08_1.mp3
+				end
+			VnV IndecisiveAttacker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_09_1.mp3
+				end
+			VnV InspiringSpeaker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_10_1.mp3
+				end
+			VnV PhilosophySkill 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_11_1.mp3
+				end
+			VnV PlainRomanVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_12_1.mp3
+				end
+			VnV Rabblerouser 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_13_1.mp3
+				end
+			VnV Scout 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_14_1.mp3
+				end
+			VnV Xenophobia 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Intro_15_1.mp3
+				end
+			VnV
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Generic_01.mp3
+					Roman_Generic_02.mp3
+					Roman_Generic_03.mp3
+					Roman_Generic_04.mp3
+					Roman_Generic_05.mp3
+					Roman_Generic_06.mp3
+					Roman_Generic_07.mp3
+					Roman_Generic_08.mp3
+					Roman_Generic_09.mp3
+					Roman_Generic_10.mp3
+					Roman_Generic_11.mp3
+					Roman_Generic_12.mp3
+					Roman_Generic_13.mp3
+					Roman_Generic_14.mp3
+					Roman_Generic_15.mp3
+					Roman_Generic_16.mp3
+					Roman_Generic_17.mp3
+					Roman_Generic_18.mp3
+					Roman_Generic_19.mp3
+					Roman_Generic_20.mp3
+					Roman_Generic_21.mp3
+				end
+		element VNV_END
+			VnV GoodSiegeAttacker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_01_1.mp3
+				end
+			VnV GoodSiegeDefender 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_02_1.mp3
+				end
+			VnV Berserker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_03_1.mp3
+				end
+			VnV Bloodthirsty 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_04_1.mp3
+				end
+			VnV Deranged 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_05_1.mp3
+				end
+			VnV Deranged 2
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_05_2.mp3
+				end
+			VnV Deranged 3
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_05_3.mp3
+				end
+			VnV Drink 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_06_1.mp3
+				end
+			VnV Drink 4
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_06_4.mp3
+				end
+			VnV Drink 6
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_06_6.mp3
+				end
+			VnV Insane 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_07_1.mp3
+				end
+			VnV Insane 2
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_07_2.mp3
+				end
+			VnV Insane 3
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_07_3.mp3
+				end
+			VnV Pious 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_08_1.mp3
+				end
+			VnV PublicAtheism 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_09_1.mp3
+				end
+			VnV PublicFaith 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_10_1.mp3
+				end
+			VnV ReligiousMania 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_11_1.mp3
+				end
+			VnV TouchedByTheGods 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_12_1.mp3
+				end
+			VnV VictorOthersVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_13_1.mp3
+				end
+			VnV VictorRomanVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_14_1.mp3
+				end
+			VnV Warlord 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extro_15_1.mp3
+				end
+			VnV
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Roman_Extros_2_01.mp3
+					Roman_Extros_2_02.mp3
+					Roman_Extros_2_03.mp3
+					Roman_Extros_2_04.mp3
+					Roman_Extros_2_05.mp3
+					Roman_Extros_2_06.mp3
+					Roman_Extros_2_07.mp3
+					Roman_Extros_2_08.mp3
+					Roman_Extros_2_09.mp3
+					Roman_Extros_2_10.mp3
+					Roman_Extros_2_11.mp3
+					Roman_Extros_2_12.mp3
+					Roman_Extros_2_13.mp3
+					Roman_Extros_2_14.mp3
+					Roman_Extros_2_15.mp3
+				end
+	cultures barbarian,nomad,hun
+		element ONE_LINER
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+		element VNV_OPENING
+			VnV BadCommander 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV BattleScarred 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV BoringSpeaker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Brave 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Brave 4
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Coward 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Feck 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV GloriousFool 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV GoodCommander 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV IndecisiveAttacker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV InspiringSpeaker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV PhilosophySkill 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV PlainRomanVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Rabblerouser 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Scout 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Xenophobia 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Barb_Generic_01.mp3
+					Barb_Generic_02.mp3
+					Barb_Generic_03.mp3
+					Barb_Generic_04.mp3
+					Barb_Generic_05.mp3
+					Barb_Generic_06.mp3
+					Barb_Generic_07.mp3
+					Barb_Generic_08.mp3
+					Barb_Generic_09.mp3
+					Barb_Generic_10.mp3
+					Barb_Generic_11.mp3
+					Barb_Generic_12.mp3
+					Barb_Generic_13.mp3
+					Barb_Generic_14.mp3
+					Barb_Generic_15.mp3
+					Barb_Generic_16.mp3
+					Barb_Generic_17.mp3
+					Barb_Generic_18.mp3
+					Barb_Generic_19.mp3
+					Barb_Generic_20.mp3
+					Barb_Generic_21.mp3
+				end
+		element VNV_END
+			VnV GoodSiegeAttacker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV GoodSiegeDefender 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Berserker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Bloodthirsty 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Deranged 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Deranged 2
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Deranged 3
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Drink 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Drink 4
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Drink 6
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Insane 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Insane 2
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Insane 3
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Pious 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV PublicAtheism 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV PublicFaith 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV ReligiousMania 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV TouchedByTheGods 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV VictorOthersVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV VictorRomanVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Warlord 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Barb_Extros_2_01.mp3
+					Barb_Extros_2_02.mp3
+					Barb_Extros_2_03.mp3
+					Barb_Extros_2_04.mp3
+					Barb_Extros_2_05.mp3
+					Barb_Extros_2_06.mp3
+					Barb_Extros_2_07.mp3
+					Barb_Extros_2_08.mp3
+					Barb_Extros_2_09.mp3
+					Barb_Extros_2_10.mp3
+					Barb_Extros_2_11.mp3
+					Barb_Extros_2_12.mp3
+					Barb_Extros_2_13.mp3
+					Barb_Extros_2_14.mp3
+					Barb_Extros_2_15.mp3
+				end
+	cultures eastern,carthaginian
+		element ONE_LINER
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+		element VNV_OPENING
+			VnV BadCommander 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV BattleScarred 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV BoringSpeaker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Brave 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Brave 4
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Coward 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Feck 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV GloriousFool 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV GoodCommander 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV IndecisiveAttacker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV InspiringSpeaker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV PhilosophySkill 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV PlainRomanVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Rabblerouser 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Scout 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Xenophobia 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Arab_Generic_01.mp3
+					Arab_Generic_02.mp3
+					Arab_Generic_03.mp3
+					Arab_Generic_04.mp3
+					Arab_Generic_05.mp3
+					Arab_Generic_06.mp3
+					Arab_Generic_07.mp3
+					Arab_Generic_08.mp3
+					Arab_Generic_09.mp3
+					Arab_Generic_10.mp3
+					Arab_Generic_11.mp3
+					Arab_Generic_12.mp3
+					Arab_Generic_13.mp3
+					Arab_Generic_14.mp3
+					Arab_Generic_15.mp3
+					Arab_Generic_16.mp3
+					Arab_Generic_17.mp3
+					Arab_Generic_18.mp3
+					Arab_Generic_19.mp3
+					Arab_Generic_20.mp3
+					Arab_Generic_21.mp3
+				end
+		element VNV_END
+			VnV GoodSiegeAttacker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV GoodSiegeDefender 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Berserker 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Bloodthirsty 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Deranged 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Deranged 2
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Deranged 3
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Drink 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Drink 4
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Drink 6
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Insane 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Insane 2
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Insane 3
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Pious 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV PublicAtheism 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV PublicFaith 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV ReligiousMania 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV TouchedByTheGods 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV VictorOthersVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV VictorRomanVirtue 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV Warlord 1
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+				end
+			VnV
+				event
+					folder data/sounds/Voice/Human/Localized/Pre_Battle_Speech
+					Arab_Extros_2_01.mp3
+					Arab_Extros_2_02.mp3
+					Arab_Extros_2_03.mp3
+					Arab_Extros_2_04.mp3
+					Arab_Extros_2_05.mp3
+					Arab_Extros_2_06.mp3
+					Arab_Extros_2_07.mp3
+					Arab_Extros_2_08.mp3
+					Arab_Extros_2_09.mp3
+					Arab_Extros_2_10.mp3
+					Arab_Extros_2_11.mp3
+					Arab_Extros_2_12.mp3
+					Arab_Extros_2_13.mp3
+					Arab_Extros_2_14.mp3
+					Arab_Extros_2_15.mp3
+				end

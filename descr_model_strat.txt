@@ -1,0 +1,589 @@
+;;	
+;	this file contains the model linkages for both strategy map and battlefield; it gets 
+;	parsed on application startup but is not otherwise referred to. the data format is thus:
+;
+;	;						indicates a comment ;-)
+;							
+;	type					indicates a new model type
+;
+;								must be followed by id name string
+;
+;	skeleton				indicates which skeleton should be used for these models
+;
+;								must be followed by id name string (cf descr_skeleton.txt)
+;
+;	indiv_range				indicates at what point we start rendering men individually even if 
+;								we can 'group render'
+;
+;								must be followed by an integer (whole number) range in metres
+;
+;								group render means the whole unit will be rendered using one 
+;								model, individual render means the soldiers will be	tested 
+;								individually for which model lod to use (slower) 
+;
+;	(models)				there must be at least one; the model_ keywords indicate a new model in
+;								the lod series; each must be followed by a filename and either the
+;								lod range in metres or the word 'max' for maximum range... all lods
+;								must be in order, from shortest distance (highest detail) to furthest
+;								distance. The model_ keywords are:
+;
+;			model_flexi_m		essentially a flexi model but has a small number of weighted 
+;								vertices, such as Will's high-detail carthaginian infantryman 
+;								with the weighted shoulder verts 
+;			
+;			model_flexi_c		a flexi model which contains per-vertex colours, for example 
+;								for colouring the different Roman faction assassins
+;
+;			model_flexi			plain vanilla flexi model, which is a single-skinned mesh with 
+;								normals and texture coordinates
+;
+;			shadow_model_flexi	as model_flexi but used to create the shadow volume	
+;
+;	model_mesh				(optional) range only for using animated mesh frames for the model
+;
+;	model_sprite			(optional) sprite model for this model type 
+;
+;								if the first item is a distance (integer number in m), a new 
+;								sprite animation set will be generated for this model; if it is 
+;								anything else, it must be a type name from this file which has a 
+;								valid sprite entry *and* was processed before this type entry
+;
+;	model_tri				(optional) indicates that this model can be represented by a single 
+;								triangle
+;
+;								must be followed by a range (integer number in metres), and three 
+;								floating point numbers in the range 0.0f - 1.0f which indicate 
+;								colours red,green,blue to use for the triangle
+;
+
+
+;strat map only characters
+ignore_registry
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;SPIES, ASSASSINS AND DIPLOMATS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				diplomat
+skeleton			strat_diplomat
+scale				0.7
+indiv_range			40
+texture		alemanni, 		bi/data/models_strat/textures/BI_strat_diplomat_alemanni.tga
+texture		empire_east, 		bi/data/models_strat/textures/BI_strat_diplomat_empire_east.tga
+texture		empire_west, 		bi/data/models_strat/textures/BI_strat_diplomat_empire_west.tga
+texture		empire_east_rebels, 	bi/data/models_strat/textures/BI_strat_diplomat_empire_east_rebels.tga
+texture		empire_west_rebels, 	bi/data/models_strat/textures/BI_strat_diplomat_empire_west_rebels.tga
+texture		franks, 		bi/data/models_strat/textures/BI_strat_diplomat_franks.tga
+texture		huns, 			bi/data/models_strat/textures/BI_strat_diplomat_huns.tga
+texture		sarmatians, 		bi/data/models_strat/textures/BI_strat_diplomat_sarmatians.tga
+texture		sassanids, 		bi/data/models_strat/textures/BI_strat_diplomat_sassanids.tga
+texture		saxons, 		bi/data/models_strat/textures/BI_strat_diplomat_saxons.tga
+texture		vandals, 		bi/data/models_strat/textures/BI_strat_diplomat_vandals.tga
+texture		goths, 			bi/data/models_strat/textures/BI_strat_diplomat_goths.tga
+texture		celts, 			bi/data/models_strat/textures/BI_strat_diplomat_celts.tga
+texture		white_huns, 		bi/data/models_strat/textures/BI_strat_diplomat_white_huns.tga
+texture		ostrogoths, 		bi/data/models_strat/textures/BI_strat_diplomat_ostrogoths.tga
+texture		romano_british, 	bi/data/models_strat/textures/BI_strat_diplomat_romano_british.tga
+texture		slavs, 			bi/data/models_strat/textures/BI_strat_diplomat_slavs.tga
+texture		moors, 			bi/data/models_strat/textures/BI_strat_diplomat_moors.tga
+texture		berbers, 		bi/data/models_strat/textures/BI_strat_diplomat_berbers.tga
+texture		slave, 			bi/data/models_strat/textures/BI_strat_diplomat_slave.tga
+texture		burgundii, 			bi/data/models_strat/textures/BI_strat_diplomat_burgundii.tga
+texture		lombardi, 			bi/data/models_strat/textures/BI_strat_diplomat_lombardi.tga
+texture		roxolani, 			bi/data/models_strat/textures/BI_strat_diplomat_roxolani.tga
+model_flexi_m		bi/data/models_strat/BI_strat_diplomat.cas, max
+shadow_model_flexi	data/models_strat/shadow_model_diplomat.cas, max
+
+
+type				spy
+skeleton			strat_spy
+scale				0.7
+indiv_range			40
+texture		alemanni, 		bi/data/models_strat/textures/BI_strat_spy_alemanni.tga
+texture		empire_east, 		bi/data/models_strat/textures/BI_strat_spy_empire_east.tga
+texture		empire_west, 		bi/data/models_strat/textures/BI_strat_spy_empire_west.tga
+texture		empire_east_rebels, 	bi/data/models_strat/textures/BI_strat_spy_empire_east_rebels.tga
+texture		empire_west_rebels, 	bi/data/models_strat/textures/BI_strat_spy_empire_west_rebels.tga
+texture		franks, 		bi/data/models_strat/textures/BI_strat_spy_franks.tga
+texture		huns, 			bi/data/models_strat/textures/BI_strat_spy_huns.tga
+texture		sarmatians, 		bi/data/models_strat/textures/BI_strat_spy_sarmatians.tga
+texture		sassanids, 		bi/data/models_strat/textures/BI_strat_spy_sassanids.tga
+texture		saxons, 		bi/data/models_strat/textures/BI_strat_spy_saxons.tga
+texture		vandals, 		bi/data/models_strat/textures/BI_strat_spy_vandals.tga
+texture		goths, 			bi/data/models_strat/textures/BI_strat_spy_goths.tga
+texture		celts, 			bi/data/models_strat/textures/BI_strat_spy_celts.tga
+texture		white_huns, 		bi/data/models_strat/textures/BI_strat_spy_white_huns.tga
+texture		ostrogoths, 		bi/data/models_strat/textures/BI_strat_spy_ostrogoths.tga
+texture		romano_british, 	bi/data/models_strat/textures/BI_strat_spy_romano_british.tga
+texture		slavs, 			bi/data/models_strat/textures/BI_strat_spy_slavs.tga
+texture		moors, 			bi/data/models_strat/textures/BI_strat_spy_moors.tga
+texture		berbers, 		bi/data/models_strat/textures/BI_strat_spy_berbers.tga
+texture		slave, 			bi/data/models_strat/textures/BI_strat_spy_slave.tga
+texture		burgundii, 			bi/data/models_strat/textures/BI_strat_spy_burgundii.tga
+texture		lombardi, 			bi/data/models_strat/textures/BI_strat_spy_lombardi.tga
+texture		roxolani, 			bi/data/models_strat/textures/BI_strat_spy_roxolani.tga
+model_flexi_m		bi/data/models_strat/BI_strat_spy.cas, max
+shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+;;TEMPORARY;;
+
+type				assassin
+skeleton			strat_assassin
+scale				0.7
+indiv_range			40
+texture		alemanni, 		bi/data/models_strat/textures/BI_strat_assassin_alemanni.tga
+texture		empire_east, 		bi/data/models_strat/textures/BI_strat_assassin_empire_east.tga
+texture		empire_west, 		bi/data/models_strat/textures/BI_strat_assassin_empire_west.tga
+texture		empire_east_rebels, 	bi/data/models_strat/textures/BI_strat_assassin_empire_east_rebels.tga
+texture		empire_west_rebels, 	bi/data/models_strat/textures/BI_strat_assassin_empire_west_rebels.tga
+texture		franks, 		bi/data/models_strat/textures/BI_strat_assassin_franks.tga
+texture		huns, 			bi/data/models_strat/textures/BI_strat_assassin_huns.tga
+texture		sarmatians, 		bi/data/models_strat/textures/BI_strat_assassin_sarmatians.tga
+texture		sassanids, 		bi/data/models_strat/textures/BI_strat_assassin_sassanids.tga
+texture		saxons, 		bi/data/models_strat/textures/BI_strat_assassin_saxons.tga
+texture		vandals, 		bi/data/models_strat/textures/BI_strat_assassin_vandals.tga
+texture		goths, 			bi/data/models_strat/textures/BI_strat_assassin_goths.tga
+texture		celts, 			bi/data/models_strat/textures/BI_strat_assassin_celts.tga
+texture		white_huns, 		bi/data/models_strat/textures/BI_strat_assassin_white_huns.tga
+texture		ostrogoths, 		bi/data/models_strat/textures/BI_strat_assassin_ostrogoths.tga
+texture		romano_british, 	bi/data/models_strat/textures/BI_strat_assassin_romano_british.tga
+texture		slavs, 			bi/data/models_strat/textures/BI_strat_assassin_slavs.tga
+texture		moors, 			bi/data/models_strat/textures/BI_strat_assassin_moors.tga
+texture		berbers, 		bi/data/models_strat/textures/BI_strat_assassin_berbers.tga
+texture		slave, 			bi/data/models_strat/textures/BI_strat_assassin_slave.tga
+texture		burgundii, 			bi/data/models_strat/textures/BI_strat_assassin_burgundii.tga
+texture		lombardi, 			bi/data/models_strat/textures/BI_strat_assassin_lombardi.tga
+texture		roxolani, 			bi/data/models_strat/textures/BI_strat_assassin_roxolani.tga
+model_flexi_m		bi/data/models_strat/BI_strat_assassin.cas, max
+shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	BI named characters
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type		BI_sm_celt_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		celts,	 		bi/data/models_strat/textures/BI_sm_celt_general_celts.tga
+texture		slavs,	 		bi/data/models_strat/textures/BI_sm_celt_general_slavs.tga
+model_flexi_m				data/models_unit/officer_barb_general_high.CAS, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		BI_sm_goth_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		goths,	 		bi/data/models_strat/textures/BI_sm_goth_general_goths.tga
+texture		ostrogoths, 		bi/data/models_strat/textures/BI_sm_goth_general_ostrogoths.tga
+model_flexi_m				bi/data/models_strat/BI_sm_goth_general.CAS, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		BI_sm_roman_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		empire_west,		bi/data/models_strat/textures/BI_sm_roman_general_empire_west.tga
+texture		empire_west_rebels,	bi/data/models_strat/textures/BI_sm_roman_general_empire_west_rebels.tga	
+texture		empire_east,		bi/data/models_strat/textures/BI_sm_roman_general_empire_east.tga	
+texture		empire_east_rebels,	bi/data/models_strat/textures/BI_sm_roman_general_empire_east_rebels.tga	
+texture		romano_british,		bi/data/models_strat/textures/BI_sm_roman_general_romano_british.tga
+texture		slave,			bi/data/models_strat/textures/BI_sm_roman_general_slave.tga
+texture		sarmatians,		bi/data/models_strat/textures/BI_sm_roman_general_sarmatian.tga
+texture		roxolani,		bi/data/models_strat/textures/BI_sm_general_roxolani.tga
+model_flexi_m				bi/data/models_strat/BI_sm_roman_general.CAS, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		BI_sm_saxons_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		saxons,			bi/data/models_strat/textures/BI_sm_saxons_general_saxons.tga
+texture		vandals,		bi/data/models_strat/textures/BI_sm_saxons_general_vandals.tga
+model_flexi_m				bi/data/models_strat/BI_sm_saxons_general.cas, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		BI_sm_huns_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		huns,			bi/data/models_strat/textures/BI_sm_huns_general_huns.tga
+texture		white_huns,		bi/data/models_strat/textures/BI_sm_huns_general_white_huns.tga
+model_flexi_m				bi/data/models_strat/BI_sm_huns_general.cas, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		BI_sm_franks_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		franks,			bi/data/models_strat/textures/BI_sm_franks_general_franks.tga
+texture		alemanni,		bi/data/models_strat/textures/BI_sm_franks_general_alemanni.tga
+texture		burgundii,		bi/data/models_strat/textures/BI_sm_general_burgundii.tga
+texture		lombardi,		bi/data/models_strat/textures/BI_sm_general_lombardi.tga
+model_flexi				bi/data/models_strat/BI_sm_franks_general.cas, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		BI_sm_desert_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		moors,			bi/data/models_strat/textures/BI_sm_desert_general_moors.tga
+texture		berbers,		bi/data/models_strat/textures/BI_sm_desert_general_berbers.tga
+model_flexi				bi/data/models_strat/BI_sm_desert_general.cas, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		BI_sm_rebel_general
+skeleton			strat_named_with_army
+scale				0.7
+indiv_range			40
+texture		slave, 		data/models_unit/textures/unit_rebel_greater_general.tga
+model_flexi_m			data/models_unit/unit_rebel_greater_general_high.cas, max
+shadow_model_flexi		data/models_strat/shadow_model_sword.cas, max
+
+type		BI_sm_sassanids_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		sassanids, 		bi/data/models_strat/textures/BI_sm_sassanids_general_sassanids.TGA
+model_flexi_m				data/models_unit/officer_eastern_general_high.CAS, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;	BI Lesser GENERALS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type				BI_sm_captain
+skeleton			strat_named_with_army
+scale				0.7
+indiv_range			40
+texture		alemanni, 		bi/data/models_strat/textures/BI_strat_captain_alemanni.tga
+texture		empire_east, 		bi/data/models_strat/textures/BI_strat_captain_empire_east.tga
+texture		empire_west, 		bi/data/models_strat/textures/BI_strat_captain_empire_west.tga
+texture		empire_east_rebels, 	bi/data/models_strat/textures/BI_strat_captain_empire_east_rebels.tga
+texture		empire_west_rebels, 	bi/data/models_strat/textures/BI_strat_captain_empire_west_rebels.tga
+texture		franks, 		bi/data/models_strat/textures/BI_strat_captain_franks.tga
+texture		huns, 			bi/data/models_strat/textures/BI_strat_captain_huns.tga
+texture		sarmatians, 		bi/data/models_strat/textures/BI_strat_captain_sarmatians.tga
+texture		sassanids, 		bi/data/models_strat/textures/BI_strat_captain_sassanids.tga
+texture		saxons, 		bi/data/models_strat/textures/BI_strat_captain_saxons.tga
+texture		vandals, 		bi/data/models_strat/textures/BI_strat_captain_vandals.tga
+texture		goths, 			bi/data/models_strat/textures/BI_strat_captain_goths.tga
+texture		celts, 			bi/data/models_strat/textures/BI_strat_captain_celts.tga
+texture		white_huns, 		bi/data/models_strat/textures/BI_strat_captain_white_huns.tga
+texture		ostrogoths, 		bi/data/models_strat/textures/BI_strat_captain_ostrogoths.tga
+texture		romano_british, 	bi/data/models_strat/textures/BI_strat_captain_romano_british.tga
+texture		slavs, 			bi/data/models_strat/textures/BI_strat_captain_slavs.tga
+texture		moors, 			bi/data/models_strat/textures/BI_strat_captain_moors.tga
+texture		berbers, 		bi/data/models_strat/textures/BI_strat_captain_berbers.tga
+texture		slave, 			bi/data/models_strat/textures/BI_strat_captain_slave.tga
+texture		burgundii, 			bi/data/models_strat/textures/BI_strat_captain_burgundii.tga
+texture		lombardi, 			bi/data/models_strat/textures/BI_strat_captain_lombardi.tga
+texture		roxolani, 			bi/data/models_strat/textures/BI_strat_captain_roxolani.tga
+model_flexi_m				bi/data/models_strat/BI_strat_captain.cas, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+;	unsorted
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+type		bi_sm_celt_lesser_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		celts,	 		bi/data/models_unit/textures/BI_officer_celtic_warlord_celts.tga
+model_flexi_m				data/models_unit/officer_barb_lesser_general_high.CAS, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		bi_sm_franks_captain
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		franks,			bi/data/models_unit/textures/BI_officer_franks_captain_franks.tga
+texture		alemanni,		bi/data/models_unit/textures/BI_officer_franks_captain_alemanni.tga
+model_flexi				bi/data/models_unit/BI_officer_franks_captain_lod1.cas, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		bi_sm_saxons_lesser_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		saxons,			bi/data/models_strat/textures/BI_officer_saxons_warlord_saxons.tga
+model_flexi				bi/data/models_strat/BI_saxons_general_strat.cas,
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		bi_sm_roman_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		empire_west,		bi/data/models_unit/textures/BI_officer_roman_general_empire_west.tga
+texture		empire_west_rebels,	bi/data/models_unit/textures/BI_officer_roman_general_empire_west_rebels.tga	
+texture		empire_east,		bi/data/models_unit/textures/BI_officer_roman_general_empire_east.tga	
+texture		empire_east_rebels,	bi/data/models_unit/textures/BI_officer_roman_general_empire_east_rebels.tga	
+texture		romano_british,		bi/data/models_unit/textures/BI_officer_roman_general_romano_british.tga
+;TEMP, correct model is bugged!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+model_flexi_m				data/models_unit/officer_barb_general_high.CAS, max
+;model_flexi				bi/data/models_unit/BI_officer_roman_general_lod1.cas, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type		bi_sm_roman_lesser_general
+skeleton				strat_named_with_army
+scale					0.7
+indiv_range				40
+texture		empire_west,		bi/data/models_unit/textures/BI_officer_roman_captain_empire_sarmatian.tga
+texture		empire_west,		bi/data/models_unit/textures/BI_officer_roman_captain_empire_west.tga
+texture		empire_west_rebels,	bi/data/models_unit/textures/BI_officer_roman_captain_empire_west_rebels.tga	
+texture		empire_east,		bi/data/models_unit/textures/BI_officer_roman_captain_empire_east.tga
+texture		empire_east_rebels,	bi/data/models_unit/textures/BI_officer_roman_captain_empire_east_rebels.tga
+texture		romano_british,		bi/data/models_unit/textures/BI_officer_roman_captain_romano_british.tga
+model_flexi				bi/data/models_unit/BI_officer_roman_captain_lod1.cas, max
+shadow_model_flexi			data/models_strat/shadow_model_sword.cas, max
+
+type				sm_barb_general
+skeleton			strat_named_with_army
+scale				0.7
+indiv_range			40
+texture		white_huns, 	data/models_strat/textures/officer_barb_general_german.tga
+texture		ostrogoths, 	data/models_strat/textures/officer_barb_general_briton.tga
+texture		slavs, 		data/models_strat/textures/officer_barb_general_dacian.tga
+texture		huns, 		data/models_strat/textures/officer_barb_general_dacian.tga
+texture		vandals, 	data/models_strat/textures/officer_barb_general_dacian.tga
+texture		goths, 		data/models_strat/textures/officer_barb_general_dacian.tga
+model_flexi_m			data/models_unit/officer_barb_general_high.CAS, max
+shadow_model_flexi		data/models_strat/shadow_model_sword.cas, max
+
+type				sm_barb_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+indiv_range			40
+texture		white_huns, 	data/models_strat/textures/unit_strat_map_captain_german.tga
+texture		ostrogoths, 	data/models_strat/textures/unit_strat_map_captain_briton.tga
+texture		slavs, 		data/models_strat/textures/unit_strat_map_captain_dacia.tga
+texture		huns, 		data/models_strat/textures/unit_strat_map_captain_dacia.tga
+texture		vandals,	data/models_strat/textures/unit_strat_map_captain_dacia.tga
+texture		goths,		data/models_strat/textures/unit_strat_map_captain_dacia.tga
+model_flexi_m			data/models_strat/barb_strat_map_captain.CAS, max
+shadow_model_flexi		data/models_strat/shadow_model_sword.cas, max
+
+
+type				sm_carthage_general
+skeleton			strat_named_with_army
+scale				0.7
+indiv_range			40
+texture				saxons, data/models_strat/textures/officer_carthage_general_carthage.tga
+texture				berbers, data/models_strat/textures/officer_carthage_general_numidia.tga
+model_flexi_m			data/models_unit/officer_carthage_general_high.cas, max
+shadow_model_flexi		data/models_strat/shadow_model_sword.cas, max
+
+
+type				sm_carthage_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+indiv_range			40
+texture				saxons, data/models_strat/textures/unit_carthage_infantry.tga
+texture				berbers, data/models_strat/textures/unit_carthage_infantry_numidia.tga
+model_flexi_m			data/models_strat/carthage_strat_captain.CAS, max
+shadow_model_flexi		data/models_strat/shadow_model_sword.cas, max
+
+type				bi_sm_eastern_general
+skeleton			strat_named_with_army
+scale				0.7
+indiv_range			40
+texture		sarmatians, 	data/models_unit/textures/officer_eastern_general_pontus.TGA
+texture		moors, 		data/models_unit/textures/officer_eastern_general_pontus.TGA
+texture		sassanids, 	data/models_unit/textures/officer_eastern_general_pontus.TGA
+model_flexi_m		data/models_unit/officer_eastern_general_high.CAS, max
+shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+type				bi_sm_eastern_lesser_general
+skeleton			strat_named_with_army
+scale				0.7
+indiv_range			40
+texture		sarmatians,	data/models_strat/textures/unit_eastern_crew_pontus.tga
+texture		moors,		data/models_strat/textures/unit_eastern_crew_pontus.tga
+texture		sassanids,	data/models_strat/textures/unit_eastern_crew_pontus.tga
+model_flexi			data/models_strat/strat_eastern_lesser_general.CAS, max
+shadow_model_flexi	data/models_strat/shadow_model_sword.cas, max
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;ADMIRALS
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+type					alemanni_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		alemanni, 		bi/data/models_strat/textures/navy_alemanni.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					empire_east_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		empire_east, 		bi/data/models_strat/textures/navy_empire_east.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					empire_west_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		empire_west, 		bi/data/models_strat/textures/navy_empire_west.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					empire_east_rebels_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		empire_east_rebels, 	bi/data/models_strat/textures/navy_empire_east_rebels.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					empire_west_rebels_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		empire_west_rebels, 	bi/data/models_strat/textures/navy_empire_west_rebels.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					franks_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		franks, 		bi/data/models_strat/textures/navy_franks.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					huns_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		huns, 			bi/data/models_strat/textures/navy_huns.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					saxons_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		saxons, 		bi/data/models_strat/textures/navy_saxons.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+	
+type					vandals_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		vandals, 		bi/data/models_strat/textures/navy_vandals.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					sarmatians_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		sarmatians,		bi/data/models_strat/textures/navy_sarmatians.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					sassanids_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		sassanids, 		bi/data/models_strat/textures/navy_sassanids.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					goths_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		goths, 			bi/data/models_strat/textures/navy_goths.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					celts_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		celts, 			bi/data/models_strat/textures/navy_celts.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					white_huns_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		white_huns, 		bi/data/models_strat/textures/navy_white_huns.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+	
+type					ostrogoths_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		ostrogoths, 		bi/data/models_strat/textures/navy_ostrogoths.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					romano_british_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		romano_british,		bi/data/models_strat/textures/navy_romano_british.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					slavs_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		slavs, 			bi/data/models_strat/textures/navy_slavs.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					moors_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		moors, 			bi/data/models_strat/textures/navy_moors.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					berbers_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		berbers, 		bi/data/models_strat/textures/navy_berbers.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					slave_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		slave, 			bi/data/models_strat/textures/navy_slave.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					burgundii_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		alemanni, 		bi/data/models_strat/textures/navy_burgundii.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					lombardi_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		alemanni, 		bi/data/models_strat/textures/navy_lombardi.tga
+model_flexi				data/models_strat/navy_barb.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+type					roxolani_admiral
+skeleton				strat_navy
+indiv_range				40
+texture		sarmatians,		bi/data/models_strat/textures/navy_roxolani.tga
+model_flexi				data/models_strat/navy_roman.cas, max
+shadow_model_flexi			data/models_strat/navy_roman_shadow.cas, max
+
+
+
