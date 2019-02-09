@@ -15,3 +15,5 @@
 /sprites/
 /textures/
 /ui/
+*.tga
+*.gitignore
