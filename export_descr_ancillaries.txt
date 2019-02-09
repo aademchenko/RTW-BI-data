@@ -12,7 +12,7 @@ Ancillary actor
     ExcludeCultures barbarian, carthaginian, nomad, hun, eastern
     Description actor_desc
     EffectsDescription actor_effects_desc
-    Effect Influence  1 
+    Effect Influence  2 
 
 ;------------------------------------------
 Ancillary aged_retainer
