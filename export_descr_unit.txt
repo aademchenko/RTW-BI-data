@@ -132,7 +132,7 @@ stat_mental      1, low, untrained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 72, 28, 20, 30, 80
+stat_cost        0, 72, 28, 20, 30, 80
 ownership        slave, alemanni, lombardi, burgundii
  
  
@@ -157,7 +157,7 @@ stat_mental      1, low, untrained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 72, 28, 20, 30, 80
+stat_cost        0, 72, 28, 20, 30, 80
 ownership        slave, franks
  
  
@@ -182,7 +182,7 @@ stat_mental      1, low, untrained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 72, 28, 20, 30, 80
+stat_cost        0, 72, 28, 20, 30, 80
 ownership        slave, saxons
  
  
@@ -207,7 +207,7 @@ stat_mental      1, low, untrained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 72, 28, 20, 30, 80
+stat_cost        0, 72, 28, 20, 30, 80
 ownership        slave, celts
  
  
@@ -1433,7 +1433,7 @@ stat_mental      1, low, untrained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 72, 28, 20, 30, 80
+stat_cost        0, 72, 28, 20, 30, 80
 ownership        slave, berbers
  
  
@@ -1668,7 +1668,7 @@ stat_mental      3, low, untrained
 stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 288, 119, 40, 60, 320
+stat_cost        0, 288, 119, 40, 60, 320
 ownership        slave, huns
  
  
@@ -1695,7 +1695,7 @@ stat_mental      3, low, untrained
 stat_charge_dist 40
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 243, 105, 40, 50, 270
+stat_cost        0, 243, 105, 40, 50, 270
 ownership        slave, sarmatians, roxolani
  
  
@@ -1720,7 +1720,7 @@ stat_mental      3, low, untrained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 81, 33, 20, 30, 90
+stat_cost        0, 81, 33, 20, 30, 90
 ownership        slave, vandals, slavs
  
  
@@ -1745,7 +1745,7 @@ stat_mental      3, low, untrained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 81, 33, 20, 30, 90
+stat_cost        0, 81, 33, 20, 30, 90
 ownership        slave, goths, ostrogoths
  
  
@@ -2954,7 +2954,7 @@ stat_mental      1, low, untrained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 80, 36, 20, 30, 80
+stat_cost        0, 80, 36, 20, 30, 80
 ownership        slave, sassanids, empire_east, empire_east_rebels
  
  
@@ -3375,7 +3375,7 @@ stat_mental      1, low, trained
 stat_charge_dist 30
 stat_fire_delay  0
 stat_food        60, 300
-stat_cost        1, 100, 50, 20, 30, 80
+stat_cost        0, 100, 50, 20, 30, 80
 ownership        slave, empire_west, romano_british, empire_west_rebels
  
  
