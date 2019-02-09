@@ -1314,7 +1314,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         13, 6, no, 0, 0, melee, blade, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
@@ -1341,7 +1341,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, very_hardy
 formation        1.2, 4, 2.4, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         11, 9, no, 0, 0, melee, blade, piercing, spear, 25 ,1
 stat_pri_attr    no
 stat_sec         14, 5, no, 0, 0, melee, blade, piercing, sword, 25 ,1
@@ -1368,7 +1368,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         13, 6, no, 0, 0, melee, blade, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
@@ -1395,7 +1395,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         13, 6, no, 0, 0, melee, blade, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
@@ -1628,7 +1628,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         8, 6, no, 0, 0, melee, blade, piercing, spear, 25 ,1
 stat_pri_attr    no
 stat_sec         9, 5, no, 0, 0, melee, blade, piercing, sword, 25 ,1
@@ -2835,7 +2835,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, very_hardy, power_charge
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         13, 6, no, 0, 0, melee, blade, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
@@ -2862,7 +2862,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, very_hardy, power_charge
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         13, 6, no, 0, 0, melee, blade, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
@@ -2889,7 +2889,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, very_hardy, power_charge
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         13, 6, no, 0, 0, melee, blade, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
@@ -2916,7 +2916,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         13, 6, no, 0, 0, melee, blade, piercing, sword, 25 ,1
 stat_pri_attr    no
 stat_sec         0, 0, no, 0, 0, no, no, no, none, 25 ,1
@@ -3337,7 +3337,7 @@ mount            horse cataphract
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         11, 3, arrow, 130, 30, missile, archery, piercing, none, 25 ,1
 stat_pri_attr    no
 stat_sec         10, 6, no, 0, 0, melee, blade, blunt, mace, 25 ,1
@@ -4120,7 +4120,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         11, 6, no, 0, 0, melee, blade, piercing, spear, 25 ,1
 stat_pri_attr    no
 stat_sec         10, 6, no, 0, 0, melee, blade, blunt, mace, 25 ,1
@@ -4147,7 +4147,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         11, 6, no, 0, 0, melee, blade, piercing, spear, 25 ,1
 stat_pri_attr    no
 stat_sec         12, 5, no, 0, 0, melee, blade, piercing, sword, 25 ,1
@@ -4276,7 +4276,7 @@ mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy
 formation        1.5, 4, 3, 6, 3, square
-stat_health      2, 0
+stat_health      1, 0
 stat_pri         11, 6, no, 0, 0, melee, blade, piercing, spear, 25 ,1
 stat_pri_attr    no
 stat_sec         12, 5, no, 0, 0, melee, blade, piercing, sword, 25 ,1
