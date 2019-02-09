@@ -1309,7 +1309,7 @@ dictionary       chosen_warlord_alemanni      ; Chosen Warlord
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          chosen_warlord, 12, 0, 1
+soldier          chosen_warlord, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
@@ -1336,7 +1336,7 @@ dictionary       frankish_paladin_bodyguard      ; Paladin Bodyguard
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          paladin_bodyguard, 12, 0, 1
+soldier          paladin_bodyguard, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, very_hardy
@@ -1363,7 +1363,7 @@ dictionary       saxon_warlord      ; Warlord
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          chosen_warlord, 12, 0, 1
+soldier          chosen_warlord, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
@@ -1390,7 +1390,7 @@ dictionary       celtic_warlord      ; Warlord
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          celtic_warlords, 12, 0, 1
+soldier          celtic_warlords, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
@@ -1623,7 +1623,7 @@ dictionary       desert_chieftain      ; Desert Chieftain
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          desert_chieftain, 12, 0, 1
+soldier          desert_chieftain, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy
@@ -2830,7 +2830,7 @@ dictionary       hunnic_warlords      ; Warlord
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          steppe_warlords, 12, 0, 1
+soldier          steppe_warlords, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, very_hardy, power_charge
@@ -2857,7 +2857,7 @@ dictionary       sarmatian_warlords      ; Warlord
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          steppe_warlords, 12, 0, 1
+soldier          steppe_warlords, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, very_hardy, power_charge
@@ -2884,7 +2884,7 @@ dictionary       steppe_warlords      ; Warlord
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          steppe_warlords, 12, 0, 1
+soldier          steppe_warlords, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, very_hardy, power_charge
@@ -2911,7 +2911,7 @@ dictionary       goth_warlords      ; Warlord
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          steppe_warlords, 12, 0, 1
+soldier          steppe_warlords, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
@@ -3332,7 +3332,7 @@ dictionary       clibinarii_immortals      ; Clibinarii Immortals
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          clibinarii_immortals, 12, 0, 1
+soldier          clibinarii_immortals, 6, 0, 1
 mount            horse cataphract
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy, power_charge
@@ -4115,7 +4115,7 @@ dictionary       imperial_household_bodyguard      ; Imperial Household Bodyguar
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          imperial_household_bodyguard, 12, 0, 1
+soldier          imperial_household_bodyguard, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy
@@ -4142,7 +4142,7 @@ dictionary       imperial_german_bodyguard      ; Imperial German Bodyguard
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          imperial_german_bodyguard, 12, 0, 1
+soldier          imperial_german_bodyguard, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy
@@ -4271,7 +4271,7 @@ dictionary       romano_british_warlords      ; Warlord
 category         cavalry
 class            heavy
 voice_type       General_1
-soldier          romano_british_warlords, 12, 0, 1
+soldier          romano_british_warlords, 6, 0, 1
 mount            generals horse
 mount_effect     elephant -4, camel -4
 attributes       sea_faring, general_unit, hide_forest, hardy
